@@ -33,7 +33,7 @@ else:
     lembur = 0
 
 total_gaji = gaji_pokok + tuj_jabatan + tunj_pendidikan + lembur
-print('============================== test')
+print('==============================')
 print('Nama Karyawan :', Nama_karyawan)
 print('Golongan Jabatan :', Jabatan)
 print('Pendidikan :', pendidikan)
