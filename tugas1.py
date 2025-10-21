@@ -6,7 +6,7 @@ jam_kerja = int(input('Masukan Jam Kerja:'))
 gaji_pokok = 300000
 
 if Jabatan == '1':
-    tuj_jabatan = 0.05 * gaji_pokok
+    tuj_jabatan = 0.05 *    gaji_pokok
 elif Jabatan == '2':
     tuj_jabatan = 0.10 * gaji_pokok
 elif Jabatan == '3':
@@ -33,7 +33,7 @@ else:
     lembur = 0
 
 total_gaji = gaji_pokok + tuj_jabatan + tunj_pendidikan + lembur
-print('==============================')
+print('============================== test')
 print('Nama Karyawan :', Nama_karyawan)
 print('Golongan Jabatan :', Jabatan)
 print('Pendidikan :', pendidikan)
