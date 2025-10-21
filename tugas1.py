@@ -6,10 +6,9 @@ jabatan = input("Golongan Jabatan  [1/2/3] : ")
 pendidikan = input("Pendidikan [SMA/D1/D3/S1] : ")
 jamkerja = int(input("Jumlah Jam Kerja  : "))
 
-# Proses Gaji Pokok berdasarkan Golongan
+
 gaji_pokok = 300000
 
-# Proses Tunjangan Jabatan
 if jabatan == "1":
     tj_jabatan = 0.05 * gaji_pokok
 elif jabatan == "2":
@@ -20,7 +19,7 @@ else:
     tj_jabatan = 0
     print("Golongan tidak dikenal, tunjangan jabatan = 0")
 
-# Proses Tunjangan Pendidikan
+
 if pendidikan.upper() == "SMA":
     tj_pendidikan = 0.025 * gaji_pokok
 elif pendidikan.upper() == "D1":
@@ -33,16 +32,14 @@ else:
     tj_pendidikan = 0
     print("Pendidikan tidak dikenal, tunjangan pendidikan = 0")
 
-# Proses Honor Lembur
 if jamkerja > 8:
     lembur = (jamkerja - 8) * 3500
 else:
     lembur = 0
 
-# Total Gaji
+
 total_gaji = gaji_pokok + tj_jabatan + tj_pendidikan + lembur
 
-# Layar Keluaran
 print("\n------------------------------------")
 print("Karyawan yang bernama :", nama)
 print("Honor yang diterima")
