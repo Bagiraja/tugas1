@@ -2,7 +2,7 @@ print("PROGRAM HITUNG GAJI KARYAWAN")
 print("------------------------------------")
 
 nama = input("Nama Karyawan     : ")
-golongan = input("Golongan Jabatan  [1/2/3] : ")
+jabatan = input("Golongan Jabatan  [1/2/3] : ")
 pendidikan = input("Pendidikan [SMA/D1/D3/S1] : ")
 jamkerja = int(input("Jumlah Jam Kerja  : "))
 
@@ -10,11 +10,11 @@ jamkerja = int(input("Jumlah Jam Kerja  : "))
 gaji_pokok = 300000
 
 # Proses Tunjangan Jabatan
-if golongan == "1":
+if jabatan == "1":
     tj_jabatan = 0.05 * gaji_pokok
-elif golongan == "2":
+elif jabatan == "2":
     tj_jabatan = 0.15 * gaji_pokok
-elif golongan == "3":
+elif jabatan == "3":
     tj_jabatan = 0.30 * gaji_pokok
 else:
     tj_jabatan = 0
@@ -46,9 +46,9 @@ total_gaji = gaji_pokok + tj_jabatan + tj_pendidikan + lembur
 print("\n------------------------------------")
 print("Karyawan yang bernama :", nama)
 print("Honor yang diterima")
-print("Tunjangan Jabatan     : Rp", int(tj_jabatan))
-print("Tunjangan Pendidikan  : Rp", int(tj_pendidikan))
-print("Honor Lembur          : Rp", int(lembur))
+print("Tunjangan Jabatan     : Rp", tj_jabatan)
+print("Tunjangan Pendidikan  : Rp", tj_pendidikan)
+print("Honor Lembur          : Rp", lembur)
 print("------------------------------------")
-print("Total Gaji            : Rp", int(total_gaji))
+print("Total Gaji            : Rp", total_gaji)
 print("------------------------------------")
